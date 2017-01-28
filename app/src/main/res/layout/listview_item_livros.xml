@@ -4,11 +4,13 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Nome do livro"
         android:id="@+id/tv_titulo"/>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,6 +34,12 @@
             android:textAlignment="textEnd"
             android:layout_gravity="end"
             />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_more_vert_black_24dp"/>
+
     </LinearLayout>
 
 
