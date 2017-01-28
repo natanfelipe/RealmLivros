@@ -13,15 +13,18 @@ public class Livro extends RealmObject {
     private int id;
     private String nome, autor;
     private int ano;
+    private byte[] foto;
+
 
     public Livro() {
     }
 
-    public Livro(int id, String nome, String autor, int ano) {
+    public Livro(int id, String nome, String autor, int ano,byte[] foto) {
         this.id = id;
         this.nome = nome;
         this.autor = autor;
         this.ano = ano;
+        this.foto = foto;
     }
 
     public int getId() {
@@ -54,5 +57,13 @@ public class Livro extends RealmObject {
 
     public void setAno(int ano) {
         this.ano = ano;
+    }
+
+    public byte[] getFoto() {
+        return foto;
+    }
+
+    public void setFoto(byte[] foto) {
+        this.foto = foto;
     }
 }
